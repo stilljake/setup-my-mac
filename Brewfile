@@ -33,7 +33,7 @@ cask "warrensbox/tap/tfswitch", trusted: true
 brew "terraform-docs"
 
 # Kubernetes
-brew "kubernetes-cli"
+brew "kubernetes-cli@1.34", link: true
 brew "helm"
 brew "k9s"
 brew "flux"
