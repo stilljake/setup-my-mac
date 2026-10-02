@@ -16,8 +16,8 @@ Bash script to set up a new Mac with the tools and settings I like to use. It wi
 xcode-select --install
 
 # Clone this repo and run the script
-git clone https://github.com/stilljake/setup-my-mac.git ~/Development/setup-my-mac
-~/Development/setup-my-mac/bootstrap.sh
+git clone https://github.com/stilljake/setup-my-mac.git ~/src/setup-my-mac
+~/src/setup-my-mac/bootstrap.sh
 ```
 
 Log out and back in afterwards for all the macOS settings to take effect.

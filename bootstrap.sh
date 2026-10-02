@@ -4,7 +4,7 @@
 set -euo pipefail
 
 REPO="$(cd "$(dirname "$0")" && pwd)"
-DOTFILES="$HOME/Development/dotfiles"
+DOTFILES="$HOME/src/dotfiles"
 NVIM_CONFIG="$HOME/.config/nvim"
 
 step() { printf '\n==> %s\n' "$*"; }

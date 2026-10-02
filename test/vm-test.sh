@@ -30,17 +30,17 @@ if ! vssh 'xcode-select -p' </dev/null >/dev/null 2>&1; then
   until vssh 'xcode-select -p' </dev/null >/dev/null 2>&1; do sleep 10; done
 fi
 
-vssh 'mkdir -p ~/Development && cp -R "/Volumes/My Shared Files/repo" ~/Development/setup-my-mac' </dev/null
+vssh 'mkdir -p ~/src && cp -R "/Volumes/My Shared Files/repo" ~/src/setup-my-mac' </dev/null
 for run in 1 2; do
   echo "==> bootstrap.sh run $run"
-  vssh 'NONINTERACTIVE=1 ~/Development/setup-my-mac/bootstrap.sh' </dev/null
+  vssh 'NONINTERACTIVE=1 ~/src/setup-my-mac/bootstrap.sh' </dev/null
 done
 
 echo "==> Checks"
 vssh 'bash -s' <<'EOF'
 set -euo pipefail
 eval "$(/opt/homebrew/bin/brew shellenv)"
-brew bundle check --file ~/Development/setup-my-mac/Brewfile
+brew bundle check --file ~/src/setup-my-mac/Brewfile
 for f in .zshrc .tmux.conf .gitconfig .claude/settings.json .aerospace.toml; do
   [ -L ~/"$f" ] || { echo "not linked: $f"; exit 1; }
 done
