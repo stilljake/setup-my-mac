@@ -207,4 +207,4 @@ automatically-unhide-macos-hidden-apps = false
 # See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [workspace-to-monitor-force-assignment]
     S = 'built-in'
-    D = 'built-in'
+    X = 'built-in'
