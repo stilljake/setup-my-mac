@@ -2022,7 +2022,7 @@
 			</array>
 			<key>Keyboard Map</key>
 			<dict>
-				<key>0xf702-0x280000-0x7b</key>
+				<key>0xf702-0x280000-0x7b-0x1</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
@@ -2035,7 +2035,7 @@
 					<key>Version</key>
 					<integer>2</integer>
 				</dict>
-				<key>0xf703-0x280000-0x7c</key>
+				<key>0xf703-0x280000-0x7c-0x1</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
@@ -2115,7 +2115,7 @@
 				<real>1</real>
 			</dict>
 			<key>Mouse Reporting</key>
-			<false/>
+			<true/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
@@ -2224,6 +2224,19 @@
 			<false/>
 			<key>Sync Title</key>
 			<false/>
+			<key>Tab Color (Dark)</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.23137255012989044</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.15686275064945221</real>
+				<key>Red Component</key>
+				<real>0.16078431904315948</real>
+			</dict>
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
@@ -3200,7 +3213,7 @@
 			</array>
 			<key>Keyboard Map</key>
 			<dict>
-				<key>0xf702-0x280000-0x7b</key>
+				<key>0xf702-0x280000-0x7b-0x1</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
@@ -3213,7 +3226,7 @@
 					<key>Version</key>
 					<integer>2</integer>
 				</dict>
-				<key>0xf703-0x280000-0x7c</key>
+				<key>0xf703-0x280000-0x7c-0x1</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
